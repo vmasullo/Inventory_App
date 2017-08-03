@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <RelativeLayout
+        android:id="@+id/item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_product_name"
+            android:text="@string/nome_finto"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#312710" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@id/text_product_name">
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
+                android:id="@+id/text_product_quantity"
+                android:paddingTop="10dp"
+                android:text="8"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#312710" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:text="@string/Stock_rimanente"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#312710" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#312710"
+                android:text="@string/currency"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_product_price"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:text="@string/Prezzo_finto"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#312710" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/compra"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
